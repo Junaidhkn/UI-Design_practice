@@ -16,11 +16,14 @@ h1 {
 .container {
    width: 100%;
    max-width: 900px;
-   background-color: whitesmoke;
+   background-color: white;
    border-radius: 25px;
    display: flex;
    flex-direction: column;
    justify-content: center;
+   align-items: center;
+   padding: 0 25px 25px 25px;
+   position: relative;
 }
 
 .links {
@@ -45,5 +48,14 @@ h1 {
 
 .active {
    color: rgb(83, 49, 156);
-   border-bottom: 3px solid rgb(83, 49, 156);
+   z-index: 2;
+   border-bottom: 5px solid rgb(83, 49, 156);
+}
+
+.line {
+   width: 800px;
+   height: 5px;
+   background-color: rgb(231, 231, 231);
+   position: absolute;
+   top: 77.9px;
 }
