@@ -47,6 +47,7 @@ h1 {
   color: rgb(83, 49, 156);
   cursor: pointer;
 }
+
 .tabs .active {
   color: rgb(83, 49, 156);
   position: relative;
@@ -123,6 +124,7 @@ h1 {
   font-weight: bold;
   margin-bottom: 16px 0 0 0;
 }
+
 .sessions-card .number {
   color: rgb(83, 49, 156);
   font-size: 54px;
@@ -151,12 +153,10 @@ h1 {
 .slider .progress {
   width: 31%;
   height: 18px;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(53, 10, 74, 1) 36%,
-    rgba(83, 49, 156, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(53, 10, 74, 1) 36%,
+      rgba(83, 49, 156, 1) 100%);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   position: absolute;
@@ -184,6 +184,7 @@ h1 {
 .scale {
   width: 100%;
 }
+
 .slider .scale ul {
   list-style: none;
   display: flex;
@@ -196,6 +197,7 @@ h1 {
 .card-wrapper {
   display: flex;
 }
+
 .card {
   background-color: rgb(250, 247, 255);
   border-radius: 10px;
@@ -251,16 +253,62 @@ h1 {
 
 .card .save-header {
   color: white;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(53, 10, 74, 1) 36%,
-    rgba(83, 49, 156, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(53, 10, 74, 1) 36%,
+      rgba(83, 49, 156, 1) 100%);
   position: absolute;
   top: -24px;
   left: 0;
   width: 100%;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+}
+
+
+/* Making Website Responsive */
+
+@media only screen and (max-width:750px) {
+  .card-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width:460px) {
+  .tabs {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .scale {
+    font-size: 8px;
+  }
+
+  .heading {
+    font-size: 24px;
+  }
+
+  .sessions-card {
+    margin: 10px 0;
+    padding: 24px;
+  }
+
+  .sessions-card .number {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
