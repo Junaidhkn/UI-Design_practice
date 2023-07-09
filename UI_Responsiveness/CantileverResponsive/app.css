@@ -1,6 +1,12 @@
 body {
   font-family: "Space Mono", monospace;
   background-color: #fdf9fd;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -10,8 +16,9 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 30px;
 }
+
 p {
   font-size: 20px;
 }
@@ -19,7 +26,7 @@ p {
 div {
   width: 55%;
   margin-left: 100px;
-  margin-top: 300px;
+  margin-top: 50px;
 }
 
 span {
@@ -35,23 +42,30 @@ span {
 
 @media only screen and (max-width: 1200px) {
   h1 {
-    font-size: 70px;
+    font-size: 40px;
   }
 }
+
 @media only screen and (max-width: 800px) {
   div {
     width: 90%;
-    margin: 100px auto;
+    margin: 20px auto;
   }
 }
 
 @media only screen and (max-width: 650px) {
   h1 {
-    font-size: 60px;
+    font-size: 30px;
   }
+
   h2 {
-    font-size: 40px;
+    font-size: 18px;
   }
+
+  p {
+    font-size: 14px;
+  }
+
   span {
     text-shadow: 0 -3.25px #0c2ffb, 0 -6.5px #2cfcfd, 0 3.25px #fb203b,
       0 6.5px #fefc4b;
