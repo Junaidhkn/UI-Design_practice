@@ -44,6 +44,13 @@ figure>div {
    min-height: 150px;
 }
 
+.wrapper {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: auto;
+   gap: 20px;
+}
+
 /* sets a specific background color for each div */
 .one {
    background-color: #9b2226;
@@ -53,10 +60,23 @@ figure>div {
    background-color: #bb3e03;
 }
 
+
 .three {
    background-color: #ee9b00;
-
 }
+
+.span2 {
+   grid-column: span 2;
+}
+
+.span3 {
+   grid-column: span 3;
+}
+
+.span4 {
+   grid-column: span 4;
+}
+
 
 .four {
    background-color: #005f73;
