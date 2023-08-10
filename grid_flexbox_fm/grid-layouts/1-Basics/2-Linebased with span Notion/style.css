@@ -44,14 +44,11 @@ figure>div {
    min-height: 150px;
 }
 
-@media(min-width: 800px) {
-   .wrapper {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto;
-      gap: 20px;
-   }
-}
+
+
+
+
+
 
 /* sets a specific background color for each div */
 .one {
@@ -73,10 +70,29 @@ figure>div {
    background-color: #005f73;
 }
 
+@media(min-width: 600px) {
+   .wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+   }
+
+   figure {
+      grid-column: span 2;
+   }
+}
 
 
 
 @media(min-width: 800px) {
+   .wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+   }
+
    .span2 {
       grid-column: span 2;
    }
@@ -87,6 +103,10 @@ figure>div {
 
    .span4 {
       grid-column: span 4;
+   }
+
+   figure {
+      grid-column: span 1;
    }
 
 }
