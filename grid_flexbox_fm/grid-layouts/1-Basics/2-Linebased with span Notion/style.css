@@ -44,11 +44,13 @@ figure>div {
    min-height: 150px;
 }
 
-.wrapper {
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: auto;
-   gap: 20px;
+@media(min-width: 800px) {
+   .wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+   }
 }
 
 /* sets a specific background color for each div */
@@ -65,20 +67,26 @@ figure>div {
    background-color: #ee9b00;
 }
 
-.span2 {
-   grid-column: span 2;
-}
-
-.span3 {
-   grid-column: span 3;
-}
-
-.span4 {
-   grid-column: span 4;
-}
 
 
 .four {
    background-color: #005f73;
+}
+
+
+
+
+@media(min-width: 800px) {
+   .span2 {
+      grid-column: span 2;
+   }
+
+   .span3 {
+      grid-column: span 3;
+   }
+
+   .span4 {
+      grid-column: span 4;
+   }
 
 }
