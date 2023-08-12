@@ -21,3 +21,64 @@ body {
 img {
    width: 100%;
 }
+
+
+#artists h4 {
+   text-transform: uppercase;
+   font-weight: normal;
+   font-size: 0.8rem;
+   margin: 0;
+}
+
+#artists h3 {
+   margin-top: 0.3em;
+}
+
+.artical-wrap {
+   display: flex;
+   flex-flow: column wrap;
+   gap: 1rem;
+}
+
+
+.artical-wrap article {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: repeat(5, auto);
+   gap: 0 1rem;
+}
+
+.artical-wrap article * {
+   grid-column: 2/3;
+   margin-top: 0;
+}
+
+.artical-wrap article img {
+   grid-column: 1/2;
+   grid-row: 1/6;
+   width: 100%;
+}
+
+
+@media (min-width: 650px) {
+   .artical-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
+   }
+}
+
+@media (min-width: 1150px) {
+
+   .artical-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 950px;
+   }
+
+   #artists {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+   }
+}
